@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+@import "variable.scss";
+
+.clearfix {
+	@include clearfix;
+}
+.clear {
+	@include legacy-pie-clearfix;
+}
+.clean {
+	@include pie-clearfix;
+}
+
+body {
+	font-size:62.5%;
+	font-family: arial,"Hiragino Sans GB","Microsoft Yahei",微软雅黑,Tahoma,Helvetica,sans-serif;
+	background-color: $bgGray;
+}
+
+a {
+	color: lighten($black, 40%);
+	text-decoration: none;
+}

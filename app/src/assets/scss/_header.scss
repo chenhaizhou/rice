@@ -1,0 +1,81 @@
+@import "common.scss";
+
+header {
+	background-color: $bgBlack;
+	position: relative;
+	padding: 0 $space;
+	height:40px;
+	line-height:40px;
+	text-align: center;
+	font-size:1rem;
+	a {
+		color:$white;
+		text-decoration: none;
+	}
+	.back {
+		position: absolute;
+		left:0;
+		width:60px;
+		span {
+			vertical-align: middle;
+		}
+	}
+	.nav {
+		position: absolute;
+		right:0;
+		width:40px;
+		top: 0;
+		.menu-icon {
+			color: $white;
+			font-size: 1.2rem;
+		}
+	}
+	.logo {
+		margin:0 60px;
+		text-align: center;
+		font-size: 1.2rem;
+	}
+}
+
+.search-form {
+	position: relative;
+	margin:10px;
+	.text {
+		margin-right:70px;
+	}
+	input[type=text] {
+		width:100%;
+		border:0;
+		padding:5px 10px 5px 30px;
+		border-radius: 5px;
+		background-color: $white;
+		height:40px;
+		line-height:40px;
+		box-sizing: border-box;
+		font-size:1rem;
+	}
+	.icon-search {
+		position: absolute;
+		left:$space;
+		z-index:1;
+		font-size:1rem;
+		line-height:40px;
+		color: lighten($black, 50%);
+	}
+	.btn {
+		border:0;
+		border-radius: 5px;
+	}
+	.btn-search {
+		width:60px;
+		background-color: $origin;
+		color: $white;
+		text-align: center;
+		line-height:40px;
+		height:40px;
+		position: absolute;
+		right:0;
+		top:0;
+		font-size:1rem;
+	}
+}

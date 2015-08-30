@@ -933,6 +933,7 @@ div.btn input {
   border-radius: 3px;
   border: 0;
   font-size: 1rem;
+  box-sizing: border-box;
 }
 
 .fork-list li {

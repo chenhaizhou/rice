@@ -500,8 +500,11 @@ header h1 {
   overflow: hidden;
   text-align: center;
   background-size: cover;
+  position: relative;
 }
 .banner .summary {
+  position: relative;
+  z-index: 2;
   display: inline-block;
   width: auto;
   margin: 40px auto;
@@ -518,6 +521,50 @@ header h1 {
 }
 .banner .summary h2 {
   font-size: 1rem;
+}
+.banner .img {
+  position: absolute;
+  z-index: 1;
+}
+.banner .rslides {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.banner .rslides li {
+  width: 100%;
+  overflow: hidden;
+}
+.banner .slide_nav {
+  position: absolute;
+  z-index: 2;
+  top: 50px;
+  text-indent: 99rem;
+  width: 20px;
+  overflow: hidden;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 60px;
+  opacity: .5;
+}
+.banner .prev {
+  left: 0;
+}
+.banner .prev::before {
+  content: "<";
+  position: absolute;
+  right: 3px;
+}
+.banner .next {
+  right: 0;
+}
+.banner .next::before {
+  content: ">";
+  position: absolute;
+  right: 3px;
 }
 
 .pro-box {
@@ -581,6 +628,10 @@ header h1 {
 .pro-list li > a strong {
   color: #4d4d4d;
   font-size: 1rem;
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .pro-list li > a span {
   display: block;
@@ -589,6 +640,22 @@ header h1 {
 .pro-list li > a > span, .pro-list li > a > strong, .pro-list li > a > em {
   margin: 0 10px;
 }
+.pro-list li .time {
+  line-height: 140%;
+}
+.pro-list li .time time {
+  margin-left: 10px;
+  color: #666666;
+}
+.pro-list li .heft, .pro-list li .business {
+  line-height: 140%;
+}
+.pro-list li .heft em, .pro-list li .business em {
+  margin-left: 10px;
+  color: #666666;
+  display: inline;
+  font-size: .8rem;
+}
 .pro-list li .mi-summary {
   float: none;
   margin-left: 0;
@@ -596,6 +663,17 @@ header h1 {
 }
 .pro-list li .mi-summary span {
   border: 0;
+}
+.pro-list li .user {
+  overflow: hidden;
+}
+.pro-list li .user strong {
+  float: left;
+}
+.pro-list li span.star {
+  padding: 0;
+  float: right;
+  vertical-align: middle;
 }
 
 .menu {
@@ -703,6 +781,8 @@ header h1 {
 }
 .tab .tab-nav li.active {
   border-bottom: 3px solid #C72E05;
+  font-weight: bold;
+  color: #4d4d4d;
 }
 .tab .nav-4 li {
   width: 100%;
@@ -1096,11 +1176,6 @@ div.btn input {
   border: 1px solid #fff;
   border-radius: 50%;
 }
-.mi-profile .profile .face .star {
-  padding: 5px 0;
-  color: #C72E05;
-  text-align: center;
-}
 .mi-profile .profile .ewm {
   width: 80px;
   height: 80px;
@@ -1109,6 +1184,12 @@ div.btn input {
 .mi-profile .profile .ewm img {
   width: 80px;
   height: 80px;
+}
+
+.main span.star {
+  padding: 5px 0;
+  color: #C72E05;
+  text-align: center;
 }
 
 .mi-summary {

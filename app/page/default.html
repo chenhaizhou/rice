@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-	<title>米农网</title>
+	<title>订大米</title>
 	<link rel="stylesheet" href="../assets/css/all.min.css">
+	<script src="../assets/js/all.min.js"></script>
 </head>
 <body>
 	<section class="main">
@@ -18,11 +19,36 @@
 			</form>
 		</div>
 
-		<div class="banner" style="background-image:url(../assets/images/p1.jpg)">
-			<div class="summary">
-				<h1>东北优质大米</h1>
-				<h2>12.8元一斤</h2>
-			</div>
+		<div class="banner slide_container">
+			<ul class="rslides" id="slider">
+				<li>
+					<div class="img">
+						<img src="../assets/images/p1.jpg" alt="">
+					</div>
+					<div class="summary">
+						<h1>东北优质大米</h1>
+						<h2>12.8元一斤</h2>
+					</div>
+				</li>
+				<li>
+					<div class="img">
+						<img src="../assets/images/p2.jpg" alt="">
+					</div>
+					<div class="summary">
+						<h1>东北优质大米2</h1>
+						<h2>12.8元一斤</h2>
+					</div>
+				</li>
+				<li>
+					<div class="img">
+						<img src="../assets/images/p3.jpg" alt="">
+					</div>
+					<div class="summary">
+						<h1>东北优质大米3</h1>
+						<h2>12.8元一斤</h2>
+					</div>
+				</li>
+			</ul>
 		</div>
 
 		<div class="pro-box">
@@ -34,103 +60,15 @@
 						<div class="mi-summary">
 							<div class="user">
 								<strong>某某米农</strong>
-								<span>53岁 河北 邯郸</span>
+								<span class="star">
+									<i class="icon icon-star2"></i>
+									<i class="icon icon-star2"></i>
+									<i class="icon icon-star2"></i>
+									<i class="icon icon-star-half-empty"></i>
+									<i class="icon icon-star-o"></i>
+								</span>
 							</div>
-							<div class="info">
-								<div class="gz">
-									<span>关注(19)</span>
-								</div>
-								<div class="bgz">
-									<span>被预定数(21)</span>
-								</div>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="home.html">
-						<img src="../assets/images/m1.jpg" alt="">
-						<div class="mi-summary">
-							<div class="user">
-								<strong>某某米农</strong>
-								<span>53岁 河北 邯郸</span>
-							</div>
-							<div class="info">
-								<div class="gz">
-									<span>关注(19)</span>
-								</div>
-								<div class="bgz">
-									<span>被预定数(21)</span>
-								</div>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="home.html">
-						<img src="../assets/images/m1.jpg" alt="">
-						<div class="mi-summary">
-							<div class="user">
-								<strong>某某米农</strong>
-								<span>53岁 河北 邯郸</span>
-							</div>
-							<div class="info">
-								<div class="gz">
-									<span>关注(19)</span>
-								</div>
-								<div class="bgz">
-									<span>被预定数(21)</span>
-								</div>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="home.html">
-						<img src="../assets/images/m1.jpg" alt="">
-						<div class="mi-summary">
-							<div class="user">
-								<strong>某某米农</strong>
-								<span>53岁 河北 邯郸</span>
-							</div>
-							<div class="info">
-								<div class="gz">
-									<span>关注(19)</span>
-								</div>
-								<div class="bgz">
-									<span>被预定数(21)</span>
-								</div>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="home.html">
-						<img src="../assets/images/m1.jpg" alt="">
-						<div class="mi-summary">
-							<div class="user">
-								<strong>某某米农</strong>
-								<span>53岁 河北 邯郸</span>
-							</div>
-							<div class="info">
-								<div class="gz">
-									<span>关注(19)</span>
-								</div>
-								<div class="bgz">
-									<span>被预定数(21)</span>
-								</div>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="home.html">
-						<img src="../assets/images/m1.jpg" alt="">
-						<div class="mi-summary">
-							<div class="user">
-								<strong>某某米农</strong>
-								<span>53岁 河北 邯郸</span>
-							</div>
+							<div class="area"><span>53岁 河北 邯郸</span></div>
 							<div class="info">
 								<div class="gz">
 									<span>关注(19)</span>									
@@ -142,7 +80,136 @@
 						</div>
 					</a>
 				</li>
-			</ul>
+				<li>
+					<a href="home.html">
+						<img src="../assets/images/m1.jpg" alt="">
+						<div class="mi-summary">
+							<div class="user">
+								<strong>某某米农</strong>
+								<span class="star">
+									<i class="icon icon-star2"></i>
+									<i class="icon icon-star2"></i>
+									<i class="icon icon-star2"></i>
+									<i class="icon icon-star-half-empty"></i>
+									<i class="icon icon-star-o"></i>
+								</span>
+							</div>
+							<div class="area"><span>53岁 河北 邯郸</span></div>
+							<div class="info">
+								<div class="gz">
+									<span>关注(19)</span>									
+								</div>
+								<div class="bgz">
+									<span>被预定数(21)</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="home.html">
+						<img src="../assets/images/m1.jpg" alt="">
+						<div class="mi-summary">
+							<div class="user">
+								<strong>某某米农</strong>
+								<span class="star">
+									<i class="icon icon-star2"></i>
+									<i class="icon icon-star2"></i>
+									<i class="icon icon-star2"></i>
+									<i class="icon icon-star-half-empty"></i>
+									<i class="icon icon-star-o"></i>
+								</span>
+							</div>
+							<div class="area"><span>53岁 河北 邯郸</span></div>
+							<div class="info">
+								<div class="gz">
+									<span>关注(19)</span>									
+								</div>
+								<div class="bgz">
+									<span>被预定数(21)</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="home.html">
+						<img src="../assets/images/m1.jpg" alt="">
+						<div class="mi-summary">
+							<div class="user">
+								<strong>某某米农</strong>
+								<span class="star">
+									<i class="icon icon-star2"></i>
+									<i class="icon icon-star2"></i>
+									<i class="icon icon-star2"></i>
+									<i class="icon icon-star-half-empty"></i>
+									<i class="icon icon-star-o"></i>
+								</span>
+							</div>
+							<div class="area"><span>53岁 河北 邯郸</span></div>
+							<div class="info">
+								<div class="gz">
+									<span>关注(19)</span>									
+								</div>
+								<div class="bgz">
+									<span>被预定数(21)</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="home.html">
+						<img src="../assets/images/m1.jpg" alt="">
+						<div class="mi-summary">
+							<div class="user">
+								<strong>某某米农</strong>
+								<span class="star">
+									<i class="icon icon-star2"></i>
+									<i class="icon icon-star2"></i>
+									<i class="icon icon-star2"></i>
+									<i class="icon icon-star-half-empty"></i>
+									<i class="icon icon-star-o"></i>
+								</span>
+							</div>
+							<div class="area"><span>53岁 河北 邯郸</span></div>
+							<div class="info">
+								<div class="gz">
+									<span>关注(19)</span>									
+								</div>
+								<div class="bgz">
+									<span>被预定数(21)</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="home.html">
+						<img src="../assets/images/m1.jpg" alt="">
+						<div class="mi-summary">
+							<div class="user">
+								<strong>某某米农</strong>
+								<span class="star">
+									<i class="icon icon-star2"></i>
+									<i class="icon icon-star2"></i>
+									<i class="icon icon-star2"></i>
+									<i class="icon icon-star-half-empty"></i>
+									<i class="icon icon-star-o"></i>
+								</span>
+							</div>
+							<div class="area"><span>53岁 河北 邯郸</span></div>
+							<div class="info">
+								<div class="gz">
+									<span>关注(19)</span>									
+								</div>
+								<div class="bgz">
+									<span>被预定数(21)</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
 			<a href="home.html" class="more">
 				<span>更多</span><i class="icon icon-chevron-right"></i>
 			</a>
@@ -155,8 +222,9 @@
 					<a href="detail.html">
 						<img src="../assets/images/m1.jpg" alt="">
 						<strong>东北有机优质大米无农药</strong>
-						<span class="business">五常农户刘红艳</span>
-						<span class="time">到货时间：<time>2015年10月31日</time></span>
+						<span class="business">五常农户<em>刘红艳</em></span>
+						<span class="time">发货时间<time>2015-10-31</time></span>
+						<span class="heft">产品净重<em>10KG</em></span>
 						<em>￥380.00</em>
 					</a>
 				</li>
@@ -164,8 +232,9 @@
 					<a href="detail.html">
 						<img src="../assets/images/m1.jpg" alt="">
 						<strong>东北有机优质大米无农药</strong>
-						<span class="business">五常农户刘红艳</span>
-						<span class="time">到货时间：<time>2015年10月31日</time></span>
+						<span class="business">五常农户<em>刘红艳</em></span>
+						<span class="time">发货时间<time>2015-10-31</time></span>
+						<span class="heft">产品净重<em>10KG</em></span>
 						<em>￥380.00</em>
 					</a>
 				</li>
@@ -173,8 +242,9 @@
 					<a href="detail.html">
 						<img src="../assets/images/m1.jpg" alt="">
 						<strong>东北有机优质大米无农药</strong>
-						<span class="business">五常农户刘红艳</span>
-						<span class="time">到货时间：<time>2015年10月31日</time></span>
+						<span class="business">五常农户<em>刘红艳</em></span>
+						<span class="time">发货时间<time>2015-10-31</time></span>
+						<span class="heft">产品净重<em>10KG</em></span>
 						<em>￥380.00</em>
 					</a>
 				</li>
@@ -182,8 +252,9 @@
 					<a href="detail.html">
 						<img src="../assets/images/m1.jpg" alt="">
 						<strong>东北有机优质大米无农药</strong>
-						<span class="business">五常农户刘红艳</span>
-						<span class="time">到货时间：<time>2015年10月31日</time></span>
+						<span class="business">五常农户<em>刘红艳</em></span>
+						<span class="time">发货时间<time>2015-10-31</time></span>
+						<span class="heft">产品净重<em>10KG</em></span>
 						<em>￥380.00</em>
 					</a>
 				</li>
@@ -191,8 +262,9 @@
 					<a href="detail.html">
 						<img src="../assets/images/m1.jpg" alt="">
 						<strong>东北有机优质大米无农药</strong>
-						<span class="business">五常农户刘红艳</span>
-						<span class="time">到货时间：<time>2015年10月31日</time></span>
+						<span class="business">五常农户<em>刘红艳</em></span>
+						<span class="time">发货时间<time>2015-10-31</time></span>
+						<span class="heft">产品净重<em>10KG</em></span>
 						<em>￥380.00</em>
 					</a>
 				</li>
@@ -200,8 +272,9 @@
 					<a href="detail.html">
 						<img src="../assets/images/m1.jpg" alt="">
 						<strong>东北有机优质大米无农药</strong>
-						<span class="business">五常农户刘红艳</span>
-						<span class="time">到货时间：<time>2015年10月31日</time></span>
+						<span class="business">五常农户<em>刘红艳</em></span>
+						<span class="time">发货时间<time>2015-10-31</time></span>
+						<span class="heft">产品净重<em>10KG</em></span>
 						<em>￥380.00</em>
 					</a>
 				</li>

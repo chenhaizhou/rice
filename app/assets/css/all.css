@@ -792,6 +792,15 @@ header h1 {
   font-weight: bold;
   color: #4d4d4d;
 }
+.tab .tab-content .tab-content-item {
+  display: none;
+}
+.tab .tab-content .active {
+  display: block;
+}
+.tab .tab-content .comment-list {
+  background-color: #fff;
+}
 .tab .nav-4 li {
   width: 100%;
 }
@@ -871,8 +880,9 @@ header h1 {
 }
 .product .summary {
   padding: 10px;
+  position: relative;
 }
-.product .summary strong {
+.product .summary h3 {
   display: block;
   font-size: 1.2rem;
   line-height: 150%;
@@ -881,9 +891,20 @@ header h1 {
   color: #C72E05;
   font-size: 1rem;
 }
+.product .summary .standard {
+  font-size: .8rem;
+  margin-right: 100px;
+}
+.product .summary .standard strong {
+  display: inline-block;
+  width: 100px;
+}
 .product .buy {
   overflow: hidden;
   padding: 1rem .5rem;
+}
+.product .buy .btn {
+  margin: 0;
 }
 .product .btn {
   float: right;
@@ -916,7 +937,7 @@ header h1 {
 .form-box label {
   padding: 0 10px;
   font-size: 1rem;
-  color: gray;
+  color: #4d4d4d;
   display: block;
   margin-top: 10px;
   line-height: 2rem;
@@ -925,7 +946,7 @@ header h1 {
   border: 0;
   height: 50px;
   line-height: 50px;
-  color: gray;
+  color: #666666;
   font-size: 1rem;
   padding: 0 10px;
   width: 100%;
@@ -1001,6 +1022,40 @@ header h1 {
   font-size: 1rem;
   color: #666666;
   border-radius: 0;
+}
+.form-box .buy {
+  margin: 10px 0;
+}
+.form-box .buy .total {
+  overflow: hidden;
+  float: none;
+  position: relative;
+  padding: 7px 10px;
+  background-color: #fff;
+  z-index: 1;
+}
+.form-box .buy .total input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 36px 0;
+}
+.form-box .buy .total .minus, .form-box .buy .total .add {
+  position: absolute;
+  top: 5px;
+}
+.form-box .buy .total .minus {
+  left: 10px;
+}
+.form-box .buy .total .add {
+  right: 10px;
+}
+.form-box .info {
+  color: #999999;
+  font-size: .8rem;
+  line-height: 150%;
+  padding: 0.2rem 10px;
 }
 
 div.btn {
@@ -1470,6 +1525,55 @@ div.btn input {
   background-color: #fff;
   color: #666666;
   font-size: .8rem;
+}
+
+.standard {
+  background-color: #fff;
+  font-size: 1rem;
+  padding: 10px;
+}
+.standard li {
+  padding: .5rem 0;
+}
+.standard li strong {
+  display: inline-block;
+  width: 120px;
+  text-align: right;
+  color: #999999;
+}
+
+.product-profile {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: 1px solid #e6e6e6;
+}
+.product-profile .release {
+  position: relative;
+  text-align: center;
+  top: 0;
+  right: 0;
+}
+.product-profile .release .text {
+  display: block;
+  color: #999999;
+  line-height: 150%;
+}
+.product-profile .summary {
+  margin: 0;
+}
+.product-profile .face {
+  float: none;
+  margin: 0 auto;
+}
+
+.buying-profile {
+  background-color: #fff;
+}
+.buying-profile .release .text {
+  display: block;
+  padding: 5px 0;
+  color: #999999;
 }
 
 footer {

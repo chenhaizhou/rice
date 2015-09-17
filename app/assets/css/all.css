@@ -792,6 +792,20 @@ header h1 {
   font-weight: bold;
   color: #4d4d4d;
 }
+.tab .tab-nav li .notice {
+  padding: .2rem .3rem;
+  color: #fff;
+  font-size: .8rem;
+  background-color: #C72E05;
+  border-radius: 10px;
+  position: relative;
+  top: -5px;
+}
+.tab .tab-nav li span {
+  color: #999999;
+  margin-left: 5px;
+  font-weight: normal;
+}
 .tab .tab-content .tab-content-item {
   display: none;
 }
@@ -800,6 +814,15 @@ header h1 {
 }
 .tab .tab-content .comment-list {
   background-color: #fff;
+}
+.tab .tab-content .tab-nav li {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+}
+.tab .tab-content .tab-nav li.active {
+  border-bottom: 0;
 }
 .tab .nav-4 li {
   width: 100%;
@@ -812,6 +835,17 @@ header h1 {
 }
 .tab .nav-4 li {
   width: 25%;
+}
+
+.add-comments {
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 1px solid #e6e6e6;
+}
+.add-comments h4 {
+  font-size: 1.2rem;
+  color: #4d4d4d;
+  padding: 10px;
 }
 
 .card-list li {
@@ -1056,6 +1090,19 @@ header h1 {
   font-size: .8rem;
   line-height: 150%;
   padding: 0.2rem 10px;
+}
+.form-box .radio {
+  background-color: #fff;
+  text-align: center;
+}
+.form-box .radio input {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.form-box .radio label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 div.btn {
@@ -1540,6 +1587,7 @@ div.btn input {
   width: 120px;
   text-align: right;
   color: #999999;
+  margin-right: 10px;
 }
 
 .product-profile {
